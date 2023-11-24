@@ -16,7 +16,7 @@ import ottoBasePkg.OttoBaseClass;
 public class OttoPage extends OttoBaseClass {
 
 //------------------------------------Home Page----------------------------------------------------------------
-	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div[2]/div/div/header/div[1]/div/div[1]/div[1]")
+	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div/div/div/header/div[1]/div/div[1]/div[1]")
 	WebElement searchIcon;
 
 	@FindBy(xpath = "//*[@id=\"HeaderSearchForm\"]/input[2]")
@@ -67,17 +67,17 @@ public class OttoPage extends OttoBaseClass {
 	WebElement logoHome;
 //------------------------------------Checkout Page------------------------------------------------------------------------------
 //------------------------------------Home Page-----------------------------------------------------------------------------------
-	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div[2]/div/div/header/div[1]/div/div[2]/div[1]/ul/li[2]/a")
+	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div/div/div/header/div[1]/div/div[2]/div[1]/ul/li[2]/a")
 	WebElement shirts;
 
-	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div[2]/div/div/header/div[1]/div/div[2]/div[1]/ul/li[2]/ul/li[3]/a")
+	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div/div/div/header/div[1]/div/div[2]/div[1]/ul/li[2]/ul/li[3]/a")
 	WebElement printShirts;
 //------------------------------------Home Page-----------------------------------------------------------------------------------
 //------------------------------------Store Location Page-------------------------------------------------------------------------
-	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div[2]/div/div/header/div[1]/div/div[2]/div[3]/ul/li[4]/a")
+	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div/div/div/header/div[1]/div/div[2]/div[3]/ul/li[4]/a")
 	WebElement storeLocation;
 
-	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div[2]/div/div/header/div[1]/div/div[3]/div/div/a[3]/span")
+	@FindBy(xpath = "//*[@id=\"shopify-section-header\"]/div[3]/div/div/div/header/div[1]/div/div[3]/div/div/a[3]/span")
 	WebElement cart;
 
 	@FindBy(xpath = "//*[@id=\"CartDrawer\"]/form/div[1]/div/div[2]/button")
@@ -140,7 +140,7 @@ public class OttoPage extends OttoBaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		Actions act = new Actions(driver);
 		act.moveToElement(shirts).perform();
-		;
+		
 
 		wait.until(ExpectedConditions.visibilityOf(printShirts));
 		printShirts.click();
